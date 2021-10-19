@@ -6,26 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
+  <body onload="loadPage();">
     <h1 id="firstLine">Welcome to tech community!</h1>
 
     <h2 id="mainL1">Lorem ipsum dolor sit.</h2>
     <h2 id="mainL2">Lorem, ipsum dolor.</h2>
 
-    <p id="paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea assumenda perspiciatis nemo dolores, sed totam qui ut a atque quod nam asperiores? Quidem facilis modi ut, nihil perspiciatis quos.</p>
-    <p id="paragraph2">Lorem ipsum dolor sit amet.</p>
+    <p id="paragraphs">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea assumenda
+      perspiciatis nemo dolores, sed totam qui ut a atque quod nam asperiores?
+      Quidem facilis modi ut, nihil perspiciatis quos.
+    
+    Lorem ipsum dolor sit amet.</p>
 
-    <input id="input1" type="text" />
+    <input id="input1" type="text" onclick="alertInp()" placeholder="This is the alert input!"/>
     <input id="input2" type="text" />
 
-    <button id="sizeCh"></button>
-    <button id="fontCh"></button>
-    <button id="pHighlight"></button>
-    <button id="hideImg"></button>
-    <button id="altImgs"></button>
+    <button id="sizeCh" style="width: 30px; height: 15px;" ></button>
+    <button id="fontCh" style="width: 30px; height: 15px;"></button>
+    <button id="pHighlight" style="width: 30px; height: 15px;"></button>
+    <button id="hideImg" style="width: 30px; height: 15px;"></button>
+    <button id="altImgs" style="width: 30px; height: 15px;"></button>
 
-    <img id="img1" onmouseover="changeImg()" onmouseout="returnImg()" src="./tuwaiq.png" width="150px" />
-<img id="img2" src="./developers.png" onmouseenter="" >
+    <img
+      id="img1"
+      onmouseover="changeImg()"
+      onmouseout="returnImg()"
+      src="./tuwaiq.png"
+      width="150px"
+    />
+    <img id="img2" src="./developers.png" width="100%" onclick="alertImg()"/>
+    
     <script src="./task1.js"></script>
   </body>
 </html>
