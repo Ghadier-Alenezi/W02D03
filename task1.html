@@ -11,32 +11,39 @@
 
     <h2 id="mainL1">Lorem ipsum dolor sit.</h2>
     <h2 id="mainL2">Lorem, ipsum dolor.</h2>
-
+    <hr>
     <p id="paragraphs">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea assumenda
       perspiciatis nemo dolores, sed totam qui ut a atque quod nam asperiores?
-      Quidem facilis modi ut, nihil perspiciatis quos.
-    
-    Lorem ipsum dolor sit amet.</p>
-
-    <input id="input1" type="text" onclick="alertInp()" placeholder="This is the alert input!"/>
-    <input id="input2" type="text" />
-
-    <button id="sizeCh" style="width: 30px; height: 15px;" ></button>
-    <button id="fontCh" style="width: 30px; height: 15px;"></button>
-    <button id="pHighlight" style="width: 30px; height: 15px;"></button>
-    <button id="hideImg" style="width: 30px; height: 15px;"></button>
-    <button id="altImgs" style="width: 30px; height: 15px;"></button>
-
+      Quidem facilis modi ut, nihil perspiciatis quos. Lorem ipsum dolor sit
+      amet.
+    </p>
+    <hr>
+    <button id="sizeCh">Change size</button>
+    <button id="fontCh">Change font</button>
+    <button id="highlight">Highlight a paragraph</button>
+    <button id="hideImg">Hide image</button>
+    <button id="altImgs">Alternate images</button>
+<hr>
+    <input
+      id="input1"
+      type="text"
+      onclick="alertInp()"
+      placeholder="This is the alert input!"
+    />
+    <hr>
     <img
-      id="img1"
+      id="img1" 
       onmouseover="changeImg()"
       onmouseout="returnImg()"
       src="./tuwaiq.png"
       width="150px"
     />
-    <img id="img2" src="./developers.png" width="100%" onclick="alertImg()"/>
-    
+    <img id="img2" src="./developers.png" width ="200px" height="100px" onclick="alertImg()" />
+    <hr>
+  
+    <img id="img3" src="./tuwaiq-logo.svg" width ="200px" height="100px"/>
+    <img id="img4" src="./googleimg.png" width ="200px" height="100px"/>
     <script src="./task1.js"></script>
   </body>
 </html>

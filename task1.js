@@ -1,3 +1,42 @@
+// change size
+const changeS = () => {
+  const firstLine = document.getElementById("firstLine");
+  firstLine.style.fontSize = "500%";
+};
+const sizeBtn = document.getElementById("sizeCh");
+sizeBtn.addEventListener("click", changeS);
+
+//vfont change
+const changeF = () => {
+  const paragraphs = document.getElementById("paragraphs");
+  paragraphs.style.fontFamily = "Impact,Charcoal,sans-serif";
+};
+const fontCh = document.getElementById("fontCh");
+fontCh.addEventListener("click", changeF);
+
+//highlight p
+const highlightP = () => {
+  const paragraphsBgc = document.getElementById("paragraphs");
+  paragraphsBgc.style.backgroundColor = "gray";
+};
+const highlight = document.getElementById("highlight");
+highlight.addEventListener("click", highlightP);
+
+//hide img
+const hideImg = () => {
+  const hideImg = document.getElementById("img2");
+  hideImg.style.visibility = "hidden";
+};
+const hiden = document.getElementById("hideImg");
+hiden.addEventListener("click", hideImg);
+
+//alternate imgs
+const altImgs = () => {
+
+};
+const alImgs= document.getElementById("altImgs");
+alImgs.addEventListener("click", altImgs);
+
 /* 
 Change an image when the mouse moves onto it,
 and then back to the original image when the mouse moves off of it.
@@ -41,9 +80,9 @@ Highlight all paragraphs when the mouse moves over them
 */
 const paraghraphs = document.querySelector("#paragraphs");
 
-paraghraphs.addEventListener("mouseenter", e => {
+paraghraphs.addEventListener("mouseenter", (e) => {
   paraghraphs.style.color = "lightGreen";
 });
-paraghraphs.addEventListener("mouseleave", e => {
+paraghraphs.addEventListener("mouseleave", (e) => {
   paraghraphs.style.color = "black";
 });
