@@ -32,10 +32,10 @@ hiden.addEventListener("click", hideImg);
 
 //alternate imgs
 const altImgs = () => {
-
-};
-const alImgs= document.getElementById("altImgs");
-alImgs.addEventListener("click", altImgs);
+let im3= document.getElementById("img3").setAttribute("src", "https://res.cloudinary.com/practicaldev/image/fetch/s--X-hc2jJt--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/am6lv2x37bole6x4poz3.jpg")
+}
+const imgsCh = document.getElementById("altImgs");
+imgsCh.addEventListener("click", altImgs);
 
 /* 
 Change an image when the mouse moves onto it,
